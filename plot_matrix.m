@@ -5,7 +5,7 @@ desc = size(Matrix);
 if length(desc) == 2
     row = desc(1);
     col = desc(2);
-    [X,Y] = meshgrid(1:row,1:col);
+    [X,Y] = meshgrid(1:col,1:row);
     mesh(X,Y,Matrix);
 else
     disp('Matrix dimension error !');
